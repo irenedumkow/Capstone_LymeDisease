@@ -76,7 +76,7 @@ app.layout = html.Div([
     dcc.Dropdown(year_list, '2008', id='year-dropdown'),
     # Radio item for age group
     html.H4("Select age group"),
-    dcc.RadioItems(['0-19', '20+','Suppressed', 'Unknown', 'Total'],
+    dcc.RadioItems(['0-19', '20+', 'Unknown', 'Total'],
                    'Total',
                    id='age_selection',
                    inline=True
@@ -98,7 +98,7 @@ app.layout = html.Div([
     ),
     # Radio items for sex status
     html.H4("Select gender group"),    
-    dcc.RadioItems(['Female', 'Male', 'Suppressed', 'Unknown', 'Total'],
+    dcc.RadioItems(['Female', 'Male', 'Unknown', 'Total'],
                    'Total',
                    id='sex_selection',
                    inline=True
