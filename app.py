@@ -98,7 +98,7 @@ app.layout = html.Div([
     ),
     # Radio items for sex status
     html.H4("Select gender group"),    
-    dcc.RadioItems(['Female', 'Male', 'Total'],
+    dcc.RadioItems(['Female', 'Male', 'Suppressed', 'Unknown', 'Total'],
                    'Total',
                    id='sex_selection',
                    inline=True
